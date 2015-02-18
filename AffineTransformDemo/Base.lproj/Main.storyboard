@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AffineTransformDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5P-WM-7HF">
+                                <rect key="frame" x="218" y="28" width="164" height="48"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.80392156859999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="3VF-Ka-fgc"/>
+                                    <constraint firstAttribute="height" constant="48" id="nIG-dd-iur"/>
+                                </constraints>
+                                <state key="normal" title="Basic">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bBK-7G-WX4" kind="show" id="tZP-gU-HwF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M5P-WM-7HF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="NWy-ZN-jX9"/>
+                            <constraint firstAttribute="centerX" secondItem="M5P-WM-7HF" secondAttribute="centerX" id="xNJ-NF-GMf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Basic View Controller-->
+        <scene sceneID="JIs-J7-qy5">
+            <objects>
+                <viewController id="bBK-7G-WX4" customClass="BasicViewController" customModule="AffineTransformDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ovq-np-TGl"/>
+                        <viewControllerLayoutGuide type="bottom" id="QvO-iz-r9x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="32L-49-eTG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tesla" translatesAutoresizingMaskIntoConstraints="NO" id="BTL-6H-4KT">
+                                <rect key="frame" x="72" y="173" width="457" height="254"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="254" id="x8F-3Y-nZL"/>
+                                    <constraint firstAttribute="width" constant="457" id="ygm-vO-oZg"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Ij4-pq-Wp6" appends="YES" id="cSM-TO-ei4"/>
+                                    <outletCollection property="gestureRecognizers" destination="gYe-iL-fIx" appends="YES" id="LIV-2H-Wim"/>
+                                    <outletCollection property="gestureRecognizers" destination="gfy-N7-IGS" appends="YES" id="uMg-Bf-gxX"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to rotate. Pan to move. Long press to clone." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTv-nC-lpP">
+                                <rect key="frame" x="16" y="526" width="568" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="rrr-eH-e28"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zTv-nC-lpP" firstAttribute="leading" secondItem="32L-49-eTG" secondAttribute="leading" constant="16" id="JbA-u3-ovU"/>
+                            <constraint firstAttribute="centerX" secondItem="BTL-6H-4KT" secondAttribute="centerX" id="O7x-cR-Bvs"/>
+                            <constraint firstAttribute="centerY" secondItem="BTL-6H-4KT" secondAttribute="centerY" id="Sd2-OA-2t5"/>
+                            <constraint firstItem="QvO-iz-r9x" firstAttribute="top" secondItem="zTv-nC-lpP" secondAttribute="bottom" constant="20" id="UAy-jY-8RV"/>
+                            <constraint firstAttribute="trailing" secondItem="zTv-nC-lpP" secondAttribute="trailing" constant="16" id="vkn-vv-QTx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="BTL-6H-4KT" id="HaR-Tv-0l6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LRl-VZ-Mom" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ij4-pq-Wp6">
+                    <connections>
+                        <action selector="imageTapped:" destination="bBK-7G-WX4" id="UtL-M4-F0w"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="gYe-iL-fIx">
+                    <connections>
+                        <action selector="imageLongPressed:" destination="bBK-7G-WX4" id="WSl-yc-MqF"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="gfy-N7-IGS">
+                    <connections>
+                        <action selector="imagePanned:" destination="bBK-7G-WX4" id="vEw-f2-Ay7"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1269" y="479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Tesla" width="374" height="208"/>
+    </resources>
+</document>
