@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E69544CE1A958888004E384F /* MaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69544CD1A958888004E384F /* MaskViewController.swift */; };
+		E69872291A9570AA00EA253A /* PathsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69872281A9570AA00EA253A /* PathsViewController.swift */; };
+		E698722C1A9570FA00EA253A /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E698722A1A9570FA00EA253A /* ImageExtension.swift */; };
+		E698722D1A9570FA00EA253A /* PathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E698722B1A9570FA00EA253A /* PathExtension.swift */; };
 		E6B5B2241A941F8600972925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B5B2231A941F8600972925 /* AppDelegate.swift */; };
 		E6B5B2261A941F8600972925 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B5B2251A941F8600972925 /* ViewController.swift */; };
 		E6B5B2291A941F8600972925 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6B5B2271A941F8600972925 /* Main.storyboard */; };
@@ -27,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E69544CD1A958888004E384F /* MaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskViewController.swift; sourceTree = "<group>"; };
+		E69872281A9570AA00EA253A /* PathsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathsViewController.swift; sourceTree = "<group>"; };
+		E698722A1A9570FA00EA253A /* ImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		E698722B1A9570FA00EA253A /* PathExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathExtension.swift; sourceTree = "<group>"; };
 		E6B5B21E1A941F8600972925 /* AffineTransformDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AffineTransformDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B5B2221A941F8600972925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6B5B2231A941F8600972925 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,7 +90,11 @@
 				E6B5B2231A941F8600972925 /* AppDelegate.swift */,
 				E6B5B2251A941F8600972925 /* ViewController.swift */,
 				E6B5B2431A9420AA00972925 /* BasicViewController.swift */,
+				E69872281A9570AA00EA253A /* PathsViewController.swift */,
+				E69544CD1A958888004E384F /* MaskViewController.swift */,
 				E6B5B2271A941F8600972925 /* Main.storyboard */,
+				E698722A1A9570FA00EA253A /* ImageExtension.swift */,
+				E698722B1A9570FA00EA253A /* PathExtension.swift */,
 				E6B5B22A1A941F8600972925 /* Images.xcassets */,
 				E6B5B22C1A941F8600972925 /* LaunchScreen.xib */,
 				E6B5B2211A941F8600972925 /* Supporting Files */,
@@ -217,7 +229,11 @@
 			files = (
 				E6B5B2261A941F8600972925 /* ViewController.swift in Sources */,
 				E6B5B2441A9420AA00972925 /* BasicViewController.swift in Sources */,
+				E698722D1A9570FA00EA253A /* PathExtension.swift in Sources */,
 				E6B5B2241A941F8600972925 /* AppDelegate.swift in Sources */,
+				E698722C1A9570FA00EA253A /* ImageExtension.swift in Sources */,
+				E69872291A9570AA00EA253A /* PathsViewController.swift in Sources */,
+				E69544CE1A958888004E384F /* MaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +427,7 @@
 				E6B5B23F1A941F8600972925 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E6B5B2401A941F8600972925 /* Build configuration list for PBXNativeTarget "AffineTransformDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +436,7 @@
 				E6B5B2421A941F8600972925 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

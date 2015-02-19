@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4rP-5g-DZS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5P-WM-7HF">
-                                <rect key="frame" x="218" y="28" width="164" height="48"/>
+                                <rect key="frame" x="218" y="84" width="164" height="48"/>
                                 <color key="backgroundColor" red="0.098039215690000001" green="0.80392156859999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="164" id="3VF-Ka-fgc"/>
                                     <constraint firstAttribute="height" constant="48" id="nIG-dd-iur"/>
                                 </constraints>
-                                <state key="normal" title="Basic">
+                                <state key="normal" title="Views">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -31,16 +31,111 @@
                                     <segue destination="bBK-7G-WX4" kind="show" id="tZP-gU-HwF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0p-af-rza">
+                                <rect key="frame" x="218" y="152" width="164" height="48"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.80392156859999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="45v-Nq-e4J"/>
+                                    <constraint firstAttribute="height" constant="48" id="fvE-Uf-qR1"/>
+                                    <constraint firstAttribute="width" constant="164" id="xox-1w-Drp"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="164" id="ysz-II-MmS"/>
+                                </constraints>
+                                <state key="normal" title="Paths">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Pnl-xh-9b4" kind="show" id="p1w-Q4-DGb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5K-qt-zoi">
+                                <rect key="frame" x="218" y="220" width="164" height="48"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.80392156859999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="48" id="2yH-at-4Kp"/>
+                                    <constraint firstAttribute="width" constant="164" id="EFr-mR-upY"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="ZBg-x7-Lkc"/>
+                                    <constraint firstAttribute="height" constant="48" id="b3A-k4-wUA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="164" id="wQz-0h-94L"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="164" id="yWz-KN-akG"/>
+                                </constraints>
+                                <state key="normal" title="Masking">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="FLo-Et-xNp" kind="show" id="8hY-we-tAN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="M5P-WM-7HF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="NWy-ZN-jX9"/>
+                            <constraint firstItem="K0p-af-rza" firstAttribute="top" secondItem="M5P-WM-7HF" secondAttribute="bottom" constant="20" id="Doh-N9-f8Z"/>
+                            <constraint firstItem="g5K-qt-zoi" firstAttribute="top" secondItem="K0p-af-rza" secondAttribute="bottom" constant="20" id="KZn-Sy-pSJ"/>
+                            <constraint firstItem="M5P-WM-7HF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="NWy-ZN-jX9"/>
+                            <constraint firstAttribute="centerX" secondItem="g5K-qt-zoi" secondAttribute="centerX" id="VKN-9x-525"/>
+                            <constraint firstAttribute="centerX" secondItem="K0p-af-rza" secondAttribute="centerX" id="wY7-jS-nDD"/>
                             <constraint firstAttribute="centerX" secondItem="M5P-WM-7HF" secondAttribute="centerX" id="xNJ-NF-GMf"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="C3Q-eI-d2B"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1695" y="644"/>
+        </scene>
+        <!--Paths View Controller-->
+        <scene sceneID="IDS-pg-Piv">
+            <objects>
+                <viewController id="Pnl-xh-9b4" customClass="PathsViewController" customModule="AffineTransformDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kCr-Ui-cMw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dwg-4v-xDh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LyX-HK-e3d">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3c-nx-jRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2492" y="644"/>
+        </scene>
+        <!--Mask View Controller-->
+        <scene sceneID="UtT-IU-t90">
+            <objects>
+                <viewController id="FLo-Et-xNp" customClass="MaskViewController" customModule="AffineTransformDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pkR-Ja-aox"/>
+                        <viewControllerLayoutGuide type="bottom" id="wzx-Zf-NcJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hHl-BM-b2R">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tesla" translatesAutoresizingMaskIntoConstraints="NO" id="CE9-uK-2rJ">
+                                <rect key="frame" x="117" y="200" width="366" height="200"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="p4R-eE-tG5" appends="YES" id="rod-c2-zDC"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="CE9-uK-2rJ" id="fvT-cd-u7r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ttA-Lw-urz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="p4R-eE-tG5">
+                    <connections>
+                        <action selector="imageTapped:" destination="FLo-Et-xNp" id="sDh-WD-bBP"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2492" y="1436"/>
         </scene>
         <!--Basic View Controller-->
         <scene sceneID="JIs-J7-qy5">
@@ -107,7 +202,25 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1269" y="479"/>
+            <point key="canvasLocation" x="2492" y="-186"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rde-JJ-q68">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4rP-5g-DZS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VRG-iI-4i9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vjc-bc-5e1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ep-Ij-j15" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="898" y="644"/>
         </scene>
     </scenes>
     <resources>

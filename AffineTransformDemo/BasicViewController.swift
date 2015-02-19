@@ -3,7 +3,6 @@
 //  AffineTransformDemo
 //
 //  Created by Craig Stanford on 18/02/2015.
-//  Copyright (c) 2015 MonsterBomb Pty Ltd. All rights reserved.
 //
 
 import UIKit
